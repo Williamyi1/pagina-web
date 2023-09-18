@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <!-- Agregar enlaces a Bootstrap CSS aquí -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        footer {
+            background-color: #0368B2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center">Formulario de Registro</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="Email enviado.html" method="post">
+                            <div class="form-group">
+                                <label for="nombreApellido">Nombre y Apellido <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="nombreApellido" name="nombreApellido" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Género</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="generoM" name="genero" value="Masculino">
+                                    <label class="form-check-label" for="generoM">Masculino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="generoF" name="genero" value="Femenino">
+                                    <label class="form-check-label" for="generoF">Femenino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="generoOtro" name="genero" value="Otro">
+                                    <label class="form-check-label" for="generoOtro">Otro</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="correoElectronico">Correo Electrónico <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="correoElectronico" name="correoElectronico" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <footer>
+        <p>Cesar Augusto Sandoval Tellez / Alfredo Ortiz Alape / William Yi - Ficha 54411</p>
+    </footer>
+</body>
+</html>
